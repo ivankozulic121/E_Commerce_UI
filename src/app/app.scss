@@ -1,0 +1,106 @@
+ .mat-slide-toggle-content {
+  color: red;
+}
+
+
+a {
+  color: inherit;        // Make links use parent text color
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+  height: 100%; // Remove underline
+}
+
+.other_nav a.active {
+  color: black;
+  border-bottom: 2px solid orange; /* active link highlight */
+}
+
+button {
+  all: unset;              /* remove default button styles */
+  cursor: pointer;
+  color: gray;             /* default gray */
+  font-size: 20px;
+  height: 100%;
+  text-decoration: none;   /* make sure no underline */
+  display: flex;
+  align-items: center;     /* vertically center inside navbar */
+  padding: 0 8px;          /* optional spacing */
+}
+
+button:hover {
+  color: black;            /* highlight on hover */
+}
+
+button.active {
+  border-bottom: 2px solid orange; /* active state */
+  color: black;
+}
+
+.header_class {
+   font-weight: 700;
+    font-size: 42px;
+    color: black;
+}
+
+//.sneakers {
+    
+    //display: flex;
+    //flex-direction: row;
+    //align-items: center;
+    //line-height: 1;
+    //display: inline-block;      // required for transform
+  //transform: scaleY(0.9);     // compress vertically
+  //transform-origin: center;
+   /*display: inline-block;      // required for transform
+  transform: scaleX(1.2);     // 1.0 = normal, >1 = wider, <1 = narrower
+  transform-origin: center;*/
+
+
+
+//}
+
+/*nav {
+    height: 200px;
+}*/
+
+
+p {
+    font-size: 16px;
+    color:gray;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: space-between;
+    //align-self:center;
+    gap: 40px;
+    height: 100px;
+}
+
+.main_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 80px;
+    gap: 50px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.other_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+}
+
+.center_links {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}

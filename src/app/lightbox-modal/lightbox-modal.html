@@ -1,0 +1,18 @@
+
+
+<div class="overlay" (click)="closeLightbox()">
+<div class ="overlay-content" (click)="$event.stopPropagation()">
+<div class="selectedImage">
+    <img [src] = "selectedImage">
+    <div class="circle"></div>
+</div>
+
+<div class="gallery">
+    <img
+        *ngFor = "let img of images"
+        [src] = "img.thumb"
+        alt="Thumbnail"
+        >
+</div>
+</div>
+</div>

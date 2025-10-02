@@ -1,0 +1,20 @@
+<p>lightbox works!</p>
+
+<div class="lightbox">
+<div class="selectedImage">
+    <img [src] = "selectedImage">
+    <div class="circle"></div>
+</div>
+
+<div class="gallery">
+    <img
+        *ngFor = "let img of images"
+        [src] = "img.thumb"
+        alt="Thumbnail"
+        (click)="selectImage(img.full)"
+        [class.active]="selectedImage === img.full">
+</div>
+</div>
+
+<app-lightbox-modal [images]="images" [selectedImage]="selectedImage" (close)="closeLightbox()" *ngIf="isModalOpen"></app-lightbox-modal>
+

@@ -1,0 +1,99 @@
+:host {
+  display: block; 
+  //flex-direction: column;     /* ensures host takes full width */
+  background-color: white;   /* dark background */
+  min-height: 100vh;        /* fill viewport height */
+  color: red;             /* optional: make text readable */
+  padding: 20px;            /* optional spacing */
+}
+
+p {
+    font-size: 16px;
+    color: red;
+}
+
+.lightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+}
+
+.selectedImage {
+    position: relative;
+}
+
+.selectedImage img {
+
+    width: 100%;
+    border-radius: 20px;
+}
+
+.circle{
+  content: "";
+  position: absolute;
+  top:50%;
+  //left: -50%;          /* required! otherwise nothing shows */
+  display: block;        /* or inline-block depending on use */
+  width: 40px;
+  height: 40px;
+  transform:translate(-50%, -50%);
+  background: red;
+  border-radius: 50%;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    //gap: 10px;
+    //gap: 25px;
+}
+
+.gallery img {
+    max-width:20%;
+    border-radius: 10px;
+}
+
+
+
+.gallery img.active {
+  border: 2px solid orange;
+  opacity: 0.8;
+
+}
+
+
+
+
+
+
+/*.lightbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 5 equal columns */
+  //grid-template-rows: repeat(5, auto);
+  //gap: 20px; /* 4 fixed rows (adjust height as needed) */
+//}
+
+//.selectedImage {
+//  grid-column: 1 / -1;  /* span all columns */
+//  grid-row: 1 / 5;      /* main area */
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  overflow: hidden;     /* prevent image from overflowing */
+//}
+//  .selectedImage img {
+//  max-width: 100%;
+// max-height: 100%;
+// object-fit: contain;  /* keeps aspect ratio */
+//}*/
+  
+    
+
+

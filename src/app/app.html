@@ -1,0 +1,22 @@
+<nav>
+  <div class="main_nav">
+    <div class="header">
+      <a href="" class="header_class">sneakers</a>
+    </div>
+    <div class="other_nav">
+      <a
+        *ngFor="let link of ['Collections','Men','Women','About','Contact']"
+        href="javascript:void(0)"
+        (click)="setActive(link)"
+        [class.active]="activeLink === link"
+      >
+        {{ link }}
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+
+<app-lightbox></app-lightbox>
+
