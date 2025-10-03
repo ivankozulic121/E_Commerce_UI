@@ -4,8 +4,8 @@
 <div class ="overlay-content" (click)="$event.stopPropagation()">
 <div class="selectedImage">
     <img [src] = "selectedImage">
-  <app-slideshow-button type="prev" [slideShowIndex]="slideShowIndex" (slideChange)="changeSlideIndex($event)" class="slideShowButton prev"></app-slideshow-button>
-  <app-slideshow-button type="next" [slideShowIndex]="slideShowIndex" (slideChange)="changeSlideIndex($event)" class="slideShowButton next"></app-slideshow-button>
+  <app-slideshow-button type="prev" [slideShowIndex]="slideShowIndex" (imageChange)="changeSlideIndex($event)" class="slideShowButton prev"></app-slideshow-button>
+  <app-slideshow-button type="next" [slideShowIndex]="slideShowIndex" (imageChange)="changeSlideIndex($event)" class="slideShowButton next"></app-slideshow-button>
 </div>
 
 <div class="gallery">

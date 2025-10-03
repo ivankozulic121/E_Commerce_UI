@@ -10,7 +10,8 @@ export class SlideshowButton {
 
   @Input() type: string = 'next';
   @Input() slideShowIndex: number = 0;
-  @Output() slideChange = new EventEmitter();
+  @Output() imageChange = new EventEmitter();
+
 
 
   get icon () {
@@ -28,8 +29,8 @@ export class SlideshowButton {
 
   handleClick() {
 
-    if (this.type === 'prev') this.slideChange.emit(this.slideShowIndex - 1);
-    else this.slideChange.emit(this.slideShowIndex + 1);
+    if (this.type === 'prev') this.imageChange.emit(this.slideShowIndex - 1);
+    else this.imageChange.emit(this.slideShowIndex + 1);
 
   }
 }
