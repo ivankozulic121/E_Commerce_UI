@@ -12,6 +12,7 @@ import { ImageGallery } from './ImageGallery';
 })
 export class Lightbox {
   images: ImageGallery[] = [
+
     { full: 'images/image-product-1.jpg', thumb: 'images/image-product-1-thumbnail.jpg' },
     { full: 'images/image-product-2.jpg', thumb: 'images/image-product-2-thumbnail.jpg' },
     { full: 'images/image-product-3.jpg', thumb: 'images/image-product-3-thumbnail.jpg' },
@@ -22,7 +23,7 @@ export class Lightbox {
 
   isModalOpen: boolean = false;
 
-   
+
   selectImage(img: string) {
     console.log("MODAL OPENED")
     this.selectedImage = img;
