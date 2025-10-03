@@ -4,11 +4,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CommonModule } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { Lightbox } from './lightbox/lightbox';
+import {SlideshowButton} from './slideshow-button/slideshow-button';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox],
+  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -17,7 +18,7 @@ export class App {
 
   activeLink = '';
 
-  
+
 
   setActive(value: string) {
     this.activeLink = value;

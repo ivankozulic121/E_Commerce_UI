@@ -1,5 +1,5 @@
 :host {
-  display: block; 
+  display: block;
   //flex-direction: column;     /* ensures host takes full width */
   background-color: white;   /* dark background */
   min-height: 100vh;        /* fill viewport height */
@@ -31,18 +31,7 @@ p {
     border-radius: 20px;
 }
 
-.circle{
-  content: "";
-  position: absolute;
-  top:50%;
-  //left: -50%;          /* required! otherwise nothing shows */
-  display: block;        /* or inline-block depending on use */
-  width: 40px;
-  height: 40px;
-  transform:translate(-50%, -50%);
-  background: red;
-  border-radius: 50%;
-}
+
 
 
 .gallery {
@@ -93,7 +82,7 @@ p {
 // max-height: 100%;
 // object-fit: contain;  /* keeps aspect ratio */
 //}*/
-  
-    
+
+
 
 
