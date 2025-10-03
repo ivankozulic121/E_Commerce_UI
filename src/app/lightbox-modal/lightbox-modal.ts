@@ -16,6 +16,7 @@ export class LightboxModal {
    @Input() images: ImageGallery[] = [];
    @Input() selectedImage: string | null = null;
    @Output() close = new EventEmitter<void>;
+   @Output() imageChange = new EventEmitter();
 
    slideShowIndex: number = 0;
 
@@ -33,5 +34,6 @@ export class LightboxModal {
     console.log("INDEX "  + index);
     this.slideShowIndex = index;
     this.selectedImage = this.images[this.slideShowIndex]["full"];
+    this.imageChange.emit(this.selectedImage);
   }
 }

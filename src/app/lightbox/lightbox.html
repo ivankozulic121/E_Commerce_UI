@@ -16,5 +16,5 @@
 </div>
 </div>
 
-<app-lightbox-modal [images]="images" [selectedImage]="selectedImage" (close)="closeLightbox()" *ngIf="isModalOpen"></app-lightbox-modal>
+<app-lightbox-modal [images]="images" [selectedImage]="selectedImage" (close)="closeLightbox()" (imageChange)="selectImage($event)" *ngIf="isModalOpen"></app-lightbox-modal>
 

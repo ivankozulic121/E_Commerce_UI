@@ -16,6 +16,7 @@ import {SlideshowButton} from './slideshow-button/slideshow-button';
 export class App {
   protected readonly title = signal('e-commerce_UI_angular');
 
+  logo: string = 'images/logo.svg';
   activeLink = '';
 
 
