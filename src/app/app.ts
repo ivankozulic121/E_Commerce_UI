@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { Lightbox } from './lightbox/lightbox';
 import {SlideshowButton} from './slideshow-button/slideshow-button';
+import {SneakerDetails} from './sneaker-details/sneaker-details';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton],
+  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton, SneakerDetails],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
