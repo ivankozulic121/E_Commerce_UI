@@ -1,0 +1,45 @@
+.sneakerInfo {
+  height: 500px;
+  width: 400px;
+}
+
+.textGray{
+  color: gray;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1;
+}
+
+
+
+.detailedDesc {
+  color: gray;
+  font-size: 14px;
+}
+
+.discountPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.currentPrice {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.discountRate {
+  height: 20px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
