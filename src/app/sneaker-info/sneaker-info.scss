@@ -24,6 +24,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 20px;
 }
 
 .discountPrice {
@@ -32,6 +33,10 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+}
+
+.discountPrice p {
+  margin: 0;
 }
 
 .currentPrice {
@@ -48,6 +53,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.initialPrice {
+  margin: 0;
 }
 
 
