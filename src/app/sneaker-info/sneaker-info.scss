@@ -20,6 +20,12 @@ h1 {
   font-size: 14px;
 }
 
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .discountPrice {
   display: flex;
   flex-direction: row;
@@ -43,3 +49,5 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+
