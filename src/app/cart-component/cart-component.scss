@@ -1,0 +1,44 @@
+.cartAndAvatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 1;
+  height: 40px;
+  transform: translateY(-25%);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.cart {
+  position: relative;
+
+}
+
+.cartCountIndicator{
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top:0;
+  right: 0;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+  font-size: 10px;
+  transform: translateX(25%) translateY(-25%);
+  //transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+//.avatar {
+  //transform: translateY(-25%);
+//}

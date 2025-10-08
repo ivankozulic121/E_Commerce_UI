@@ -6,11 +6,13 @@ import { NgFor } from '@angular/common';
 import { Lightbox } from './lightbox/lightbox';
 import {SlideshowButton} from './slideshow-button/slideshow-button';
 import {SneakerDetails} from './sneaker-details/sneaker-details';
+import {QuantityInfo} from './quantity-info/quantity-info';
+import {CartComponent} from './cart-component/cart-component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton, SneakerDetails],
+  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton, SneakerDetails, QuantityInfo, CartComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
