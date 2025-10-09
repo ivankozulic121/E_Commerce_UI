@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CartService} from '../cart-service';
 
 @Component({
   selector: 'app-quantity-info',
@@ -8,13 +9,21 @@ import { Component } from '@angular/core';
 })
 export class QuantityInfo {
 
-   count: number = 0;
+  count: number = 0;
+  //currentQuantity$
+  constructor(private cartService: CartService) {
+    this.cartService.currentQuantity$.subscribe(q => this.count = q)
+  }
+
+
 
    increase() {
-     this.count++
+      this.cartService.setCurrentQuantity(this.count  + 1);
+     //this.currentQuantity$.value++
+     //this.cartService.setCurrentCount(this.currentQuantity$.- 1);
    }
 
   decrease() {
-    this.count--
+    this.cartService.setCurrentQuantity(this.count - 1);
   }
 }

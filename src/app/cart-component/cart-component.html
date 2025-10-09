@@ -4,7 +4,7 @@
   <button>
     <div class="cart">
       <img src="images/icon-cart.svg">
-      <div class="cartCountIndicator"><span>1</span></div>
+      <div class="cartCountIndicator"><span>{{ cartCount$ | async}}</span></div>
     </div>
   </button>
   <img class="avatar" src="images/image-avatar.png">

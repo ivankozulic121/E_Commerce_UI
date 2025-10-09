@@ -6,14 +6,17 @@
     withstand everything the weather can offer.</p>
     <div class="priceInfo">
       <div class="discountPrice">
-      <p class="currentPrice">$125.00</p>
+      <p class="currentPrice">${{ currentPrice.toFixed(2) }}</p>
       <div class="discountRate">
-            <p>50%</p>
+            <p>{{ discountRate.toString().split('.')[1] || '0' }}0%</p>
       </div>
       </div>
 
-        <p class="initialPrice">$250.00</p>
-      <app-quantity-info></app-quantity-info>
+        <p class="initialPrice">${{ initialPrice.toFixed(2) }}</p>
+      <div class="buttonContainer">
+        <app-quantity-info></app-quantity-info>
+        <app-add-to-cart-button></app-add-to-cart-button>
+      </div>
     </div>
   </div>
 </div>
