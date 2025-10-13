@@ -1,11 +1,18 @@
 
 
 <div class="cartAndAvatar">
-  <button>
-    <div class="cart">
-      <img src="images/icon-cart.svg">
-      <div class="cartCountIndicator"><span>{{ cartCount$ | async}}</span></div>
-    </div>
-  </button>
+  <div class="cartButton">
+    <button (click)="onCartClick()">
+      <div class="cartImg">
+        <img src="images/icon-cart.svg">
+        <div class="cartCountIndicator"><span>{{ cartCount$ | async}}</span></div>
+
+      </div>
+    </button>
+    <app-cart-content *ngIf="showContent" class="cartContent"></app-cart-content>
+  </div>
+
+
+
   <img class="avatar" src="images/image-avatar.png">
 </div>

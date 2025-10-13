@@ -1,0 +1,39 @@
+:host {
+  margin: 0;
+  padding: 0;
+}
+
+.cartContent {
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 2px 8px rgba(128, 128, 128, 0.3);
+  background-color: #fff;
+}
+.cartHeader {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid #b0b0b0;
+  margin: 0;
+  padding-left: 15px;
+}
+
+img {
+  max-height: 17.5%;
+  max-width: 17.5%;
+}
+
+p{
+  margin: 0;
+}
+
+.productDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

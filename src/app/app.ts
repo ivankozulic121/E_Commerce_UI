@@ -8,11 +8,13 @@ import {SlideshowButton} from './slideshow-button/slideshow-button';
 import {SneakerDetails} from './sneaker-details/sneaker-details';
 import {QuantityInfo} from './quantity-info/quantity-info';
 import {CartComponent} from './cart-component/cart-component';
+import {CartContent} from './cart-content/cart-content';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton, SneakerDetails, QuantityInfo, CartComponent],
+  imports: [RouterOutlet, MatSlideToggleModule, CommonModule, Lightbox, SlideshowButton, SneakerDetails, QuantityInfo,
+    CartComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

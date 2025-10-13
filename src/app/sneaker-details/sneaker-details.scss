@@ -4,8 +4,9 @@
 .sneakerDetails {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
+  gap: 100px;
 }
